@@ -224,6 +224,32 @@ nav ul li a:hover::after { width: 100%; }
   font-size: 15px;
 }
 
+/* ── Bullet Points Experience ── */
+.exp-list {
+  list-style: none;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-list li {
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.exp-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--rose);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /* ── BUTTONS ── */
 .btn {
   padding: 13px 30px;
